@@ -40,4 +40,29 @@ public class CatTest {
         Assert.assertEquals(givenId, retrievedId);
     }
 
+    @Test
+    public void setNameTest(){
+        String expected = "Yeet";
+        Cat cat = new Cat();
+        cat.setName(expected);
+        String actual = cat.getName();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void speakTest(){
+        String expected = "Meow";
+        Cat cat = new Cat();
+        String actual = cat.speak();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setBirthDate(){
+        Date date = new Date();
+        Cat cat = new Cat();
+        Date actual = cat.getBirthDate();
+        Assert.assertEquals(expected, actual);
+    }
+
 }
